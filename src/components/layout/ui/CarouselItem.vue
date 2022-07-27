@@ -1,20 +1,18 @@
 <template>
-<div>
-    <img :src="require('../../../img/' + sliderItem.img )" alt="">
-</div>
+  <div>
+    <img :src="require('../../../img/' + sliderItem.img)" alt="" />
+  </div>
 </template>
 
 <script>
-
 export default {
-    props: ['sliderItem']
+  props: ['sliderItem'],
 };
 </script>
 
 <style scoped>
 img {
-    width: 1432px;
-     /* width: 100%; */
+  width: 900px;
   height: auto;
 }
 </style>

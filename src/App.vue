@@ -12,18 +12,31 @@ export default {
 </script>
 
 <style>
-* {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  /* font-size 10px = 1rem */
+  font-size: 62.5%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
   color: #343a40;
   line-height: 1;
+}
+
+@media (max-width: 768px) {
+  html {
+    /* font-size 10px = 1rem */
+    font-size: 50%;
+  }
 }
 </style>

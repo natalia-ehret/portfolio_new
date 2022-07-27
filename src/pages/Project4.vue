@@ -1,12 +1,18 @@
 <template>
   <div class="container">
     <h2>WE ARE WHAT WE EAT</h2>
-    <img
-      class="img1"
-      :src="
-        require('../img/WeAreWhatWeEat_film stills/NataliaEhret_WeAreWhatWeEat_FilmStils_Germany.jpg')
-      "
-    />
+    <div class="video-block">
+      <iframe
+        width="1200"
+        height="675
+   "
+        src="https://www.youtube.com/embed/A7M8o8ZHgEw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
     <p>
       What is culture or nationality? In a narrow sense, it is the same
       birthplace, language and traditions for a group of people. For examle,
@@ -44,16 +50,7 @@
       poetry quotes, some bits from the opera "Eugene Onegin", the old Kazakh
       anthem that we learned for our district administration, and much more.
     </p>
-    <iframe
-      width="1200"
-      height="675
-   "
-      src="https://www.youtube.com/embed/A7M8o8ZHgEw"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <projects-footer></projects-footer>
   </div>
 </template>
 
@@ -71,15 +68,16 @@ export default {
   margin: 0 auto;
   letter-spacing: -0.7px;
   line-height: 1.2;
-  padding-bottom: 50px;
+  margin-bottom: 15rem;
+  margin-top: 10rem;
 }
 
 p {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 400;
 }
 
@@ -87,10 +85,54 @@ h2 {
   width: 65%;
 }
 
-/* @media (max-width: 900px) {
-    iframe {
-        width:560px;
-        height:315px;
-    } 
-}  */
+.video-block {
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+}
+
+@media (max-width: 462px) {
+  iframe {
+    width: 100%;
+    /* height: 120px; */
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 790px) {
+  iframe {
+    width: 100%;
+    height: 428px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1293px) {
+  iframe {
+    width: 760px;
+    height: 428px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
 </style>

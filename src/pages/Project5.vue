@@ -9,6 +9,7 @@
       to reflect on how conventionally could be classification people into
       typical and atypical.
     </p>
+
     <p>
       We know that a lot of neuro atypical people in the history of art or
       science have only enriched their society. Maybe it's time to talk about
@@ -16,8 +17,8 @@
     </p>
     <div class="video-block">
       <iframe
-        width="1200"
-        height="675"
+        width="1200px"
+        height="675px"
         src="https://www.youtube.com/embed/kNlzU-W7SSg"
         title="YouTube video player"
         frameborder="0"
@@ -25,6 +26,7 @@
         allowfullscreen
       ></iframe>
     </div>
+    <projects-footer></projects-footer>
   </div>
 </template>
 
@@ -42,18 +44,66 @@ export default {
   margin: 0 auto;
   letter-spacing: -0.7px;
   line-height: 1.2;
-  padding-bottom: 50px;
+  margin-bottom: 15rem;
+  margin-top: 10rem;
 }
 
 p {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 400;
 }
 .video-block {
   margin: 0 auto;
+  display: flex;
+  justify-content: start;
+}
+
+@media (max-width: 462px) {
+  iframe {
+    width: 300px;
+    height: 169px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 790px) {
+  iframe {
+    width: 100%;
+    height: 428px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1293px) {
+  iframe {
+    width: 760px;
+    height: 428px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
 }
 </style>

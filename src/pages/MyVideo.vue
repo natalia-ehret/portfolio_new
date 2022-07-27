@@ -44,9 +44,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 900px;
-  margin-left: 25px;
-  margin-top: 120px;
+  max-width: 90rem;
+  margin-left: 2.5rem;
+  margin-top: 15rem;
 }
 
 a {
@@ -58,13 +58,14 @@ a:hover {
 }
 
 .videos {
-  margin-top: 80px;
+  margin-top: 8rem;
 }
 
 button {
   border: none;
   background-color: white;
-  font-size: 40px;
+  font-size: 4rem;
+  color: #343a40;
 }
 
 .button:hover {
@@ -72,7 +73,7 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 1293px) {
+/* @media (max-width: 1293px) {
   button {
     font-size: 30px;
   }
@@ -82,5 +83,5 @@ button {
   button {
     font-size: 25px;
   }
-}
+} */
 </style>

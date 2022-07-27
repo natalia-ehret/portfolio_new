@@ -23,6 +23,11 @@
         33659 Bielefeld<br />
         Germany<br />
       </p>
+      <p class="daten-schutz">
+        <router-link to="/datenschutzerklaerung"
+          >Datenschutzerklärung</router-link
+        >
+      </p>
     </div>
     <div class="photo">
       <img :src="require('../img/natalia.jpg')" />
@@ -51,8 +56,8 @@ export default {};
 
 .text {
   /* margin-left: 25px; */
-  font-size: 40px;
-  margin-top: 90px;
+  font-size: 4rem;
+  margin-top: 9rem;
 }
 
 img {
@@ -60,7 +65,7 @@ img {
 }
 .photo {
   /* max-width: 1000px; */
-  margin-top: 90px;
+  margin-top: 9rem;
   justify-self: end;
   /* margin-right: 25px; */
 }
@@ -68,7 +73,7 @@ img {
 a:link,
 a:visited {
   text-decoration: none;
-  color: #868e96;
+  color: #343a40;
 }
 
 a:hover,
@@ -92,6 +97,11 @@ a:active {
     font-size: 30px;
     margin-top: 90px;
   }
+}
+
+.daten-schutz {
+  font-style: italic;
+  font-size: 35px;
 }
 
 @media (max-width: 460px) {

@@ -1,14 +1,14 @@
 <template>
   <div class="wrapper">
     <div class="btns" v-if="isShown">
+      <button class="button" @click="clickHandler('/projects/photo/project3')">
+        MY MOTHER'S DRESS
+      </button>
       <button class="button" @click="clickHandler('/projects/photo/project1')">
         WHAT IS MISSING
       </button>
       <button class="button" @click="clickHandler('/projects/photo/project2')">
         S̶I̶M̶U̶L̶A̶T̶I̶O̶N̶ STIMULATION
-      </button>
-      <button class="button" @click="clickHandler('/projects/photo/project3')">
-        MY MOTHER'S DRESS
       </button>
     </div>
   </div>
@@ -47,27 +47,30 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 800px;
-  margin-left: 25px;
-  margin-top: 120px;
+  max-width: 80rem;
+  margin-left: 2.5rem;
+  margin-top: 15rem;
 }
 
-a {
+a:link,
+a:visited {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active {
   color: rgb(183, 48, 228);
 }
 
 .photos {
-  margin-top: 80px;
+  margin-top: 8rem;
 }
 
 button {
   border: none;
   background-color: white;
-  font-size: 40px;
+  font-size: 4rem;
+  color: #343a40;
 }
 
 .button:hover {
@@ -75,7 +78,7 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 1293px) {
+/* @media (max-width: 1293px) {
   button {
     font-size: 30px;
   }
@@ -85,5 +88,5 @@ button {
   button {
     font-size: 25px;
   }
-}
+} */
 </style>

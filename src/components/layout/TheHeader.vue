@@ -20,6 +20,9 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  font-weight: 400;
 }
 
 ul {
@@ -28,7 +31,7 @@ ul {
   align-items: center;
   list-style-type: none;
   text-transform: uppercase;
-  gap: 20px;
+  gap: 2rem;
 }
 
 li a {
